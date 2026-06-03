@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int quantity = sc.nextInt();
+            int price = sc.nextInt();
+
+            double total = quantity * price;
+
+            if (quantity > 1000) {
+                total = total * 0.9; // 10% discount
+            }
+
+            System.out.printf("%.6f%n", total);
+        }
+
+        sc.close();
+    }
+}
