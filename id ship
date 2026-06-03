@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            char ch = sc.next().charAt(0);
+
+            switch (Character.toLowerCase(ch)) {
+                case 'b':
+                    System.out.println("BattleShip");
+                    break;
+                case 'c':
+                    System.out.println("Cruiser");
+                    break;
+                case 'd':
+                    System.out.println("Destroyer");
+                    break;
+                case 'f':
+                    System.out.println("Frigate");
+                    break;
+            }
+        }
+
+        sc.close();
+    }
+}
